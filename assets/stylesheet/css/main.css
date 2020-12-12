@@ -5,7 +5,13 @@ body {
   font-family: 'DIN Pro';
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   padding: 0;
   margin: 0;
 }
@@ -204,4 +210,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header .menu-link a.tel:before {
   background-image: url("../../icons/Vector (1).svg");
+}
+
+@media screen and (max-width: 768px) {
+  .header .menu-link.tablet {
+    display: none !important;
+  }
 }
