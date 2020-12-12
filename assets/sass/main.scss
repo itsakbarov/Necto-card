@@ -1,0 +1,187 @@
+
+// vars
+$restaurant: #FCCC43;
+$shop: #DA57F8;
+$health: #FF027E;
+$edu: #1CB60E;
+$services: #2F80ED;
+$rest: #D51313;
+$cafe: #F95F09;
+$text: #010F56;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-family: 'DIN Pro';
+
+}
+h1,h2,h3,h4,h5,h6,p{
+    padding: 0;
+    margin: 0;
+}
+.primary-btn {
+    padding: 10px 66px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    transition: all ease 0.5s;
+    line-height: 18px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #010F56;
+    box-sizing: border-box;
+    border-radius: 2px;
+    align-items: center;
+    color: #07003B;
+}
+
+.card {
+    // width: 238px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    transition: all ease 0.5s;
+    margin-bottom: 30px;
+    &:hover{
+box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
+    }
+    .card__image {
+        position: relative;
+        display: block;
+
+        .image {
+            width: 100%;
+        }
+
+        .card-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 6px;
+            background: #FFFFFF;
+            border-radius: 7px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-percent {
+            padding: 8px 20px;
+            font-style: normal;
+            font-weight: bold;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            color: $health;
+            background: #FFFFFF;
+            border-radius: 3px;
+        }
+    }
+
+    .card-info {
+        padding: 10px;
+
+        .card-info__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 11px;
+            margin-bottom: 20px;
+            color: $text;
+        }
+
+        .tag {
+            padding: 6px 21px;
+            background: grey;
+            margin-bottom: 10px;
+            border-radius: 2px;
+            margin-bottom: 10px;
+            display: inline-block;
+            color: white;
+
+            &--food {
+                color: black;
+                background: $restaurant;
+            }
+            &--edu {
+                background: $edu;
+            }
+            &--health{
+                background: $health;;
+            }
+
+            &--services {
+                background: $services;
+            }
+
+            &--rest {
+                background: $rest;
+            }
+            &--cafe {
+                background: $cafe;
+            }
+        }
+
+        .card-info__location {
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            color: black;
+
+            span {
+                color: $text;
+                font-weight: 100;
+            }
+        }
+
+        .primary-btn:hover {
+            background: #07003B;
+            color: white;
+        }
+    }
+}
+.header {
+    background: #07003B;
+    box-shadow: 0px 4px 20px rgba(7, 0, 59, 0.2);
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .menu-link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        padding-left: 30px;
+        line-height: 15px;
+        position: relative;
+        a.logo:before{
+            content:'';
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: url(../../icons/Vector.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        a.tel:before{
+            // display: none;
+            background-image: url('../../icons/Vector\ \(1\).svg');
+        }
+    }
+}
